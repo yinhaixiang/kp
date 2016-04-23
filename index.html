@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pong</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./src/css/all.css">
+</head>
+<body>
+<div id='startScene'>
+  <div class='title'><span class='k'>K</span> & <span class='p'>P</span></div>
+  <div class='btn'>start</div>
+</div>
+<div id='gameScene'>
+  <div class='ui'>
+    <div id='score'>score:0</div>
+    <div id='rule'>规则：根据听到的声音按顺序点击kit和pong按钮或者按键盘P和K键</div>
+    <div id='audios'></div>
+  </div>
+  <div class='btns'>
+    <div id='k' class='btn k'>
+      <div class='text'>kit</div>
+    </div>
+    <div id='p' class='btn p'>
+      <div class='text'>pong</div>
+    </div>
+  </div>
+</div>
+<script src='./src/js/zepto.js'></script>
+<script src='./src/js/hilo.js'></script>
+<script src='./src/js/sound.js'></script>
+<script src='./src/js/game.js'></script>
+</body>
+</html>
