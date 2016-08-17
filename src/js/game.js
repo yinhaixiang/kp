@@ -61,7 +61,7 @@ var press = function (enterKey) {
 }
 
 var levels = [
-  3, 3, 5, 5, 6, 6, 6, 7, 7, 7
+  3, 3, 5, 5, 6, 6, 6, 7, 7, 7, 9, 9, 9, 10, 10, 10
 ];
 
 var level = 0;
@@ -101,6 +101,7 @@ var startLevel = function (callback) {
   }
   else {
     sound.play('gameover');
+    alert('您的得分是:[' + score + '], 棒棒哒!');
   }
 };
 
